@@ -5,6 +5,7 @@ import Footer from "@/components/Layout/Footer"
 import { ThemeProvider } from "next-themes"
 import ScrollToTop from "@/components/ScrollToTop"
 import Aoscompo from "@/utils/aos"
+import ClientLayout from "@/components/Layout/ClientLayout"; 
 const font = Inter({ subsets: ["latin"] })
 
 export default function RootLayout({ children }) {
@@ -18,7 +19,9 @@ export default function RootLayout({ children }) {
         >
           <Aoscompo>
             <Header />
+            
             {children}
+             
             <Footer />
           </Aoscompo>
           <ScrollToTop />

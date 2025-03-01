@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Dropdownone from "./Dropdownone"
 import Dropdowntwo from "./Dropdowntwo"
 

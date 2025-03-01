@@ -23,7 +23,7 @@ const HeaderLink = ({ item }) => {
     >
       <Link
         href={item.href}
-        className={`text-base flex font-medium hover:text-primary capitalized  ${path === item.href ? "text-primary " : " text-muted "
+        className={`text-base flex font-medium hover:text-primary capitalized  ${path === item.href ? "text-primary " : " text-primary "
           }`}
       >
         {item.label}

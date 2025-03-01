@@ -62,6 +62,11 @@ const Header = () => {
     }
   }, [isSignInOpen, isSignUpOpen, navbarOpen])
 
+  if (pathUrl === ("/practice" ,"/contact")) {
+    return null;
+  }
+
+
   return (
     <header
       className={`fixed top-0 z-40 w-full transition-all duration-300 ${

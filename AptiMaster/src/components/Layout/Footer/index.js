@@ -1,6 +1,8 @@
+"use client"
 import Link from "next/link"
 import Image from "next/image"
 import { Icon } from "@iconify/react/dist/iconify.js"
+import { usePathname } from "next/navigation"
 
 const products = [
   {
@@ -21,7 +23,11 @@ const products = [
   }
 ]
 
-const footer = () => {
+const Footer = () => {
+  const pathUrl = usePathname();
+  if (pathUrl === "/practice") {
+    return null;
+  }
   return (
     <div className="bg-primary" id="first-section">
       <div className="container mx-auto lg:max-w-screen-xl md:max-w-screen-md pt-64 px-4">
@@ -140,7 +146,7 @@ const footer = () => {
             className="hover:text-white"
           >
             {" "}
-            GetNextJs Templates.com
+            AptiMaster.com
           </Link>
         </h3>
       </div>
@@ -148,4 +154,4 @@ const footer = () => {
   )
 }
 
-export default footer
+export default Footer

@@ -1,10 +1,10 @@
 const headerData = [
   { label: "Home", href: "/" },
-  { label: "Courses", href: "/" },
+  { label: "Practice", href: "/practice" },
   { label: "Mentors", href: "/" },
   { label: "Testimonial", href: "/" },
   { label: "Join", href: "/" },
-  { label: "Contact Us", href: "/" },
+  { label: "Contact Us", href: "/contact" },
   { label: "Docs", href: "/documentation" },
 ];
 
